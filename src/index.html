@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="icon/iconfont.css">
+	<style>
+		.v-enter,.v-leave-to{
+            opacity: 0;
+        }
+        .v-enter-to,.v-leave{
+            opacity: 1;
+        }
+        .v-enter-active,.v-leave-active{
+            transition: opacity 2s ease;
+        }
+        .ok{
+            position: fixed;
+		    background: #000;
+		    color: #fff;
+		    bottom: 20px;
+		    width: 80%;
+		    height: 40px;
+		    left: 10%; 
+		    background: rgba(0,0,0,.5);
+		    line-height: 40px;
+		    border-radius: 5px;
+		    text-align: center;
+		    font-size: 20px;
+        }
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<my-header></my-header>
+		<!-- <header class="header">
+			<p><span class="iconfont">&#xe62f;</span><input type="text"><span><b>x</b></span></p>
+		</header> -->
+		<my-list></my-list>
+	</div>
+	<script src="common/vue.min.js"></script>
+	<script src="common/axios.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+		var html=document.documentElement;
+		html.style.fontSize=(html.clientWidth/320*50)+"px";
+	</script>
+</body>
+</html>
